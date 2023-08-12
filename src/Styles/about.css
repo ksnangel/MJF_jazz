@@ -1,0 +1,171 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  /* scroll-behavior는 IE에서 적용되지 않는다. */
+  /* scroll-behavior: smooth; */
+}
+body {
+  background-color: black;
+}
+.inner{
+  width: 1300px;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+/*====================inner> title====================== */
+.title{
+  display: flex;
+}
+/* .imgRandom {
+  width: 580px;
+  padding-left: 50px;
+  transition-duration: 2s; 
+}
+.imgChangeDiv {
+  padding-top: 190px;
+} */
+.sliderWrap{
+    width: 603px;
+    padding: 80px 0 0 10px;
+}
+.sliderimg img{
+  width: 100%;
+  height: 400px;
+}
+.mainTitle{
+  color: white;
+  margin-left: 10px;
+  padding-top: 350px;
+}
+.mainTitle span{
+  font-size: 48px;
+  display: inline-block;
+  margin-left: -65px;
+}
+.mainTitle span:last-child{
+  /* 마진이 적용안됨 꼭 확인!! 안되서 그냥 인라인블럭으로 주고 사용  */
+  /* 못산다! span은 인라인태그이고 인라인 태그는 기본적으로 양옆만 쓸수 있다!!!  */
+  display: inline-block;
+  margin-left: 53px;
+  margin-top: 20px;
+}
+/*====================inner> Dday====================== */
+.dDay span{
+  display: inline-block;
+  margin-left: -565px;
+  padding-top: 310px;
+  font-size: 21px;
+}
+/*==================inner>subtitle===================== */
+#subTitle {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 1200px;
+  height: 66px;
+  border-left: 5px solid #607d8b;
+  margin-top: 50px;
+}
+#subTitle span {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 64px;
+  width: 820px;
+  transition-duration: 2s;
+}
+/*=================info======================*/
+.info {
+  display: flex;
+  /* flex 정렬은 justify-content 하고 시작 */
+  margin-top: 50px;
+  width: 1200px;
+  margin-left: -10px;
+}
+.info p {
+  color: white;
+  transition-duration: 2s;
+  text-align: justify;
+  width: 500px;
+  padding: 15px 0 0 70px;
+  font-size: 17px;
+}
+.introImg img {
+  width: 500px;
+}
+.introImg{
+  padding: 20px 0 0 50px;
+}
+/*===================gallery======================*/
+.inner_gallery{
+  display: flex;
+  justify-content: center;
+}
+#gallery1 {
+  padding-top: 350px;
+}
+.gallery img{
+  width: 550px;
+  height: 380px;
+  cursor: zoom-in;
+  margin-right: 20px;
+}
+.gallery img:hover{
+  transition: 3s, ease-in-out;
+  transition: 2s;
+  opacity: 0.5;
+}
+/*======================모달Img==========================*/
+.galleryModal{
+  display: none;
+  width: 110%;
+  height: 115%;
+  position: absolute;
+  top: 1200px; left: 100px;
+  /* 띄워주는 위치를 직접지정 */
+}
+.modalImg{
+  background-image: url("/img/png1.png");
+  width: 80%;
+  height: 80%;
+}
+.modalBg{
+  position: absolute;
+  justify-content: center;
+  top: 0; left: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /*이미지위에 자꾸 배경이 떠서 미구현*/
+  width: 100%;
+  height: 100%;
+}
+
+.closeBtn{
+  position: absolute;
+  font-size: 45px;
+  color: white;
+  top: 16px; left: 20px;
+  /* 띄우질 못해서 타협 ㅠㅠ */
+  width: 46px; height: 46px;
+  line-height: 45px;
+  text-align: center;
+  box-shadow: 1px 1px gray;
+}
+
+/*===========marquee============*/
+.marqueeDiv{
+  margin: 28px 0 24px 0;
+  height: 40px;
+  width: 100%;
+}
+.marqueeDiv marquee{
+  color: white;
+  line-height: 40px;
+  font-size: medium;
+  opacity: 0.5;
+}

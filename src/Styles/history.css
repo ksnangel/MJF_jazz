@@ -1,0 +1,462 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+  font-size: 15px;
+  margin: 0;
+  color: #222;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+main h1{
+color:#ebebeb;
+font-weight:500; 
+/* font-weight: 500; */
+line-height: 1.3em;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* font-weight: 500;은 bold보다 연하고 normal보다 진하다 */
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+input,
+button,
+textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Common CSS */
+.inner {
+  width: 1400px;
+  margin: auto;
+}
+
+/* container */
+.container {
+  background-color: #000;
+}
+
+/* header */
+header {
+  position: fixed;
+  width:100%;
+  z-index:1000;
+  transition:0.5s;
+}
+
+/* header>banner */
+.banner {
+  background-color: #000;
+  height:60px;
+  display:flex;
+  align-items: center;
+  transition:0.5s;
+}
+
+.lnb {
+  text-align:end;
+}
+.lnb a{
+  margin-right: 10px;
+  color:#ddd;
+  font-size:1em;
+  font-weight:bold;
+}
+.lnb a:last-child {
+  margin:0;
+}
+.lnb a em {
+  margin-right:5px;
+  font-weight:300;
+}
+
+/* header with actice class */
+header.active {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header.active .banner {
+  /* display: none; */
+  /* display none은 transition을 줄 수 없다. */
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+/* navigation hover 시 underline animation */
+header.active .gnb a {
+  position: relative;
+  color: #000;
+}
+
+header.active .gnb a:after {
+  content: '';
+ position: absolute;  
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  transition: 0.3s;
+}
+
+header.active .gnb a:hover:after {
+  width: 100%;
+}
+
+/* nav Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* nav .inner{
+  display: flex;
+  text-align:end;
+  position: relative;
+} */
+.logo {
+  width:110px;
+  height:100px;
+}
+.logo img {
+  width:100%;
+  height:100%;
+}
+.gnb {
+  display: flex;
+  /* text-align:end;
+  position: relative; */
+}
+
+.gnb a {
+  margin-right: 20px;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1.3em;
+}
+.gnb a:hover {
+  color: #333;
+}
+.gnb a:last-child {
+  margin: 0;
+}
+
+/* Main .intro */
+.h_title {
+  height: 65vh;
+  /*인덱스CSS와 다름 변경==>  height: 100vh;*/
+ background: url(/../src/Assets/Images/suv_bg.png) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  /* 인덱스CSS와 다름 변경==>   color: #fff; */
+  color:#7AFEFF;
+  text-align: center;
+  margin-top:300px;
+
+
+}
+.heading h1 {
+  color:#7AFEFF;
+  font-size: 150px;
+  /*인덱스CSS와 다름 변경==>  margin-bottom: 40px; */
+  opacity: 70%;
+}
+.heading-text {
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 150px;
+}
+
+
+/* 선녀 history Section ==================================================*/
+
+
+/*인덱스CSS와 다름 변경==> CallAction Section */
+ main h1 { 
+  color: #c1dcdc;
+  font-size: 250px
+ }
+
+.buttons { 
+ /* background: url(\src\Assets\Images\historyimg\film.png) repeat ;   */
+  background: #000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.buttons button{
+  /* background: url( "/src/Assets/Images/historyimg/filmframe.png" ) no-repeat;  */
+  /* color: #fff; */
+  color: #c1dcdc;
+  background: #000; 
+  font-size: 20px;
+  padding: 1%;
+}
+
+button.btnAllHistory{
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+  margin-right: var(--base-space);
+}
+
+.item:hover,
+.btnHistory
+.btnAllHistory:hover,
+.btn:hover,
+.logo:hover {
+  transform: scale(1.4);
+  color:#7AFEFF;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b8a8a;
+  font-size: 45px;
+  float: center;
+  padding-bottom: 20px;
+}
+
+
+	
+@media (max-width: 1400px) {
+p {
+    font-size: 20px;
+  }
+}
+
+.buttons { 
+   background: #000; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 15px;
+ }
+
+.all_itemsDiv {
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.items {
+  width: 80%;
+  height: 90%;
+  list-style: none;
+  padding-left: 0;
+ }
+
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  margin-bottom: var(--base-space);
+}
+
+.item img{
+  width: 300px;
+  padding: 3%;
+}
+
+
+.item button{
+  font-size: 20px;
+  padding: 3%;
+  background: #000;
+  color: #fff;
+ 
+}
+
+.item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item__description {
+  /* margin-left: ; */
+  width: 300px;
+  /* font-size: ; */
+}
+
+.barDiv{
+width:1px;
+height: 100%;
+}
+
+.history:before {
+  content: '';
+  background: #0B0B0B;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.history-heading {
+  text-align: center;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  position: relative;
+}
+
+.history-heading h2 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3em;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.history-heading h2 span {
+  font-weight: 500;
+}
+
+.history-heading a {
+  color: #fff;
+  background: #000;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.history-heading a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.history span {
+  font-style:italic;
+  color:white ;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 30px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  text-align: center;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.footer-col h3 {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.footer-col a {
+  color: #959595;
+  transition: 0.5s;
+}
+.footer-col a:hover {
+  transform: scale(1.1);
+}
+
+.copy-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+.copy-wrap h3 {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.copy-wrap-desc {
+  color: #959595;
+}
+.copy {
+  color: #eee;
+  margin-top: 35px;
+}
+
+/* Go to Top */
+.goToTop {
+  /* a tag는 크기 값을 가질 수 없지만,
+     position: fixed;하는 순간에 inline-block으로 바뀌면서 크기 값을 가질 수 있다.
+  */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 50px;
+  bottom: -50px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.goToTop.active {
+  opacity: 1;
+  bottom: 50px;
+}

@@ -1,0 +1,168 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- slick CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- font-awesome 4.7.0 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- JacaScript -->
+    <script src="../Script/index.js"></script>
+    <script src="../Script/about.js"></script>
+
+    <!-- CSS file Link(항상 헤더 가장 하단으로 보낸다) -->
+    <link rel="stylesheet" href="../Styles/index.css" />
+    <link rel="stylesheet" href="../Styles/about.css" />
+    <!-- 슬라이더 라이브러리 사용  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  </head>
+
+  <body>
+   <!-- 전체 container -->
+   <div class="container">
+    <!-- 공통 header -->
+    <header>
+      <!-- banner -->
+      <div class="banner">
+        <div class="lnb inner">
+          <a href="#"><em>about</em>Member</a>
+          <a href="#"><em>for</em>Client</a>
+          <a href="#"><em>go to</em>Info</a>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <nav class="inner">
+        <div class="logo">
+          <a href="#"><img src="../Assets/Images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="gnb">
+          <a href="../index.html">HOME</a>
+          <a href="../Pages/about.html">ABOUT</a>
+          <a href="../Pages/history.html">HISTORY</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="intro">
+      <div class="inner">
+        <div class="heading">
+          <!-- =========여기부터 수정===============  -->
+            <div class="title">
+              <div class="sliderWrap">
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img1.jpg" alt="1img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img2.jpg" alt="2img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img3.jpg" alt="3img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img4.jpg" alt="4img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img5.jpg" alt="5img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img6.jpg" alt="6img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img7.jpg" alt="7img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img8.jpg" alt="8img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img9.jpg" alt="9img"></div>
+                <div class="sliderimg"> <img src="../Assets/Images/aboutImg/img10.jpg" alt="10img"></div>
+               
+              </div>
+              <div class="mainTitle">
+                <span> Montreux Jazz Festival,</span>
+                <span>  Where Legends Are Born</span>
+              </div>
+              <div class="dDay">
+                <span></span>
+              </div>
+            </div> 
+            
+            <div id="subTitle">
+              <span>“It is the most important monument in the history of music,
+                including jazz, blues and rock.”</span><br>
+            </div>
+            
+            <div class="info">
+              <!-- p는 전체 span은 개별로  -->
+              <p>
+                La Montreux Jazz Festival Collection est une collection unique de
+                performances live de musiciens du monde entier, avec leur propre
+                influence culturelle et esthétique, qui sont venus à l'événement
+                musical annuel à fort impact et l'ont réalisé sur une période de
+                45 ans. est un disque de fusion. La collection comprend de la
+                musique d'artistes établis et inconnus, ainsi que d'artistes
+                nouveaux et inconnus. En raison de l'effet synergique que ces
+                artistes exerçaient ensemble  , il était extrêmement difficile de
+                classer les musiciens devant la liste du patrimoine mondial de
+                l'UNESCO. De plus, le travail d'isolement de la collection a été
+                considéré comme un travail contre l'essence du « patrimoine
+                mondial inscrit ».
+              </p>
+              <div class="introImg">
+                <img src="../Assets/Images/aboutImg/img11.jpg" alt="" />
+              </div>
+        </div>
+      </div>
+    </div>
+   </main>
+
+    <div class="gallery">
+      <div class="galleryModal">        <!-- 모달 배경용  초기 none→ flex 처리--> 
+        <div class="modalBg"></div>
+        <div class="closeBtn">X</div>     <!-- 모달 끄기 버튼  초기 none 처리--> 
+        <div class="modalImg"></div>            <!-- 모달내용  아래의 이미지를 누르면 --> 
+      </div>
+      <div id="gallery1" class="inner_gallery">
+        <img src="../Assets/Images/aboutImg/img5.jpg" alt="">
+        <img src="../Assets/Images/aboutImg/img3.jpg" alt="">
+      </div>
+      <div class="inner_gallery">
+        <img src="../Assets/Images/aboutImg/img7.jpg" alt="">
+        <img src="../Assets/Images/aboutImg/img6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="marqueeDiv">
+      <marquee scrolldelay="100"></marquee>
+    </div>
+      <!-- 여기까지 수정 -->
+    <footer>
+      <div class="inner">
+        <div class="footer-wrap">
+          <div class="footer-col">
+            <h3>Comuunity</h3>
+            <a href="#">Subsribe</a>
+            <a href="#">Give a Gift</a>
+            <a href="#">Customer Service FAQ</a>
+            <a href="#">Access Your Subcription</a>
+          </div>
+          <div class="footer-col">
+            <h3>Network</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Advertise</a>
+            <a href="#">Jobs</a>
+          </div>
+          <div class="copy-wrap">
+            <h3>Help Preserve This Project</h3>
+            <div class="copy-wrap-desc">
+              We may earn a commission if you purchase an item featured on our
+              site.
+            </div>
+            <div class="copy">
+              Copyright &copy; 2022 Skylar Choe. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Go to Top -->
+  <a class="goToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  </body>
+</html>
